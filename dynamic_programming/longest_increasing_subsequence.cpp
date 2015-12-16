@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
-
+/* program to find Longest Increasinng Subsequence; for example, say a = {10, 22, 9, 33, 21, 50, 41, 60, 80} 
+LIS length is 6 and it is {10, 22, 33, 50, 60, 80}
+Time complexity O(n^2), Space complexity O(n)
+*/
 void printLIS(int a[], int result[], int index)
 {
 	if(index == 0)
