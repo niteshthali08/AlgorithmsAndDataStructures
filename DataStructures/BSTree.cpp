@@ -2,6 +2,10 @@
 #include <iostream>
 #include <string>
 using namespace std;
+/*
+author: Nitesh Thali
+BST implementation in c++ with insert, search and delete functionality.	
+*/
 struct node {
 	int data;
 	struct node *parent;
@@ -93,7 +97,7 @@ void transplant (node **root, node* u, node* v)
 // replace tree rooted at u with that of v
 {
 	if(u->parent == NULL)
-		root = &v;
+		*root = v;
 	else if (u == u->parent->left)
 		u->parent->left = v;
 	else
@@ -103,10 +107,12 @@ void transplant (node **root, node* u, node* v)
 }
 void delete_key(node **root, int key)
 {
+	// have to handle the case when root == NULL
 	node *max = bst_maximum(root);
 	node *min = bst_minimum(root);
-	cout << max->data << " "<< min->data << endl;
+	//cout << max->data << " "<< min->data << endl;
 	node *z = search_key(root, key);
+	cout << "found node: " <<z->data << endl;
 	node *y;
 	if (z == NULL) 
 	{	
@@ -116,15 +122,19 @@ void delete_key(node **root, int key)
 	//actual deletion
 	if (z->left == NULL)
 	{
+		//cout << "left is null" <<endl;
 		transplant(root, z, z->right);
 	}
 	else if (z->right == NULL)
 	{
+		//cout<<"right is null" <<endl;
 		transplant(root, z, z->left);
 	}
 	else
 	{
+		
 		y = bst_minimum(&(z->right));
+		//cout << "deleting node with successor value: "<<y->data<<" parent: " << y->parent->data << endl;
 		if (y->parent != z)
 		{
 			transplant(root, y, y->right);
@@ -134,6 +144,7 @@ void delete_key(node **root, int key)
 		transplant(root, z, y);
 		y->left = z->left;
 		y->left->parent = y;
+		//cout <<"root now: "<< (*root)->data <<endl;
 		free(z);
 	}
 }
@@ -179,6 +190,7 @@ int main(int argc, char const *argv[])
 			case 3:
 				cout << "\nKey: ";
 				cin >> key;
+				//cout << "calling delete function" <<endl;
 				delete_key(&root, key);
 				break;
 			case 4:
