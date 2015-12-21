@@ -1,7 +1,10 @@
 #include <iostream>
 using namespace std;
-// merge sort uses divide and conquer strtegy to sort the elements.
-//Running time: O(n), Space complexity: O(n)
+/* 
+author: Nitesh Thali
+merge sort uses divide and conquer strtegy to sort the elements.
+Running time: O(n), Space complexity: O(n)
+*/
 void merge(int a[], int low, int mid, int high)
 {
 	//cout << "low:mid:high " << low << ":"<< mid <<":"<< high<<endl;

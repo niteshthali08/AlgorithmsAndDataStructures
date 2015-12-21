@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
-/* max heap code to sort array in decreasing order, in place sorting.
-
+/* 
+author: Nitesh Thali
+max heap code to sort array in decreasing order, in place sorting.
 Time complexity for buildiing a max heap: O(n)
 Time complexity to sort: O(n*lgn)
 */
