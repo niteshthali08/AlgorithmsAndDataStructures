@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>3-way_Quick_sort.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>NUmber_of_Inversions.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>binary_search.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>divide_and_conquere.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>find_majority_element.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6D1110E21D1760B9005C4117</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D1110F01D1760CE005C4117</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D1110FB1D176DBB005C4117</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D1111061D17972E005C4117</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D1111111D17A0FE005C4117</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
