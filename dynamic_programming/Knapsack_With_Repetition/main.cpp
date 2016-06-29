@@ -42,3 +42,9 @@ int main() {
     }
     std::cout << "Optimal Weight: " << optimal_weight(W, w) << '\n';
 }
+/*
+ Sample Input Output:
+ 10 3
+ 1 4 8
+ Optimal Weight: 10
+ */
