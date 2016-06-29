@@ -7,21 +7,26 @@
 		<key>Dynamic_Programming.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>3</integer>
+		</dict>
+		<key>Edit_Distance_Between_Two_Strings.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>Knapsack_With_Repetition.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Knapsack_Without_Repetition.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Knapsack_Without_repetition.xcscheme</key>
 		<dict>
@@ -36,6 +41,11 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>Maximum_Value_Of_Arithmetic_Expression.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>Minimum_number_of_operations.xcscheme</key>
 		<dict>
@@ -78,6 +88,16 @@
 			<true/>
 		</dict>
 		<key>6DA2B2181D23B7900092B49C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6DA2B2231D24528B0092B49C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6DA2B22E1D245CB00092B49C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

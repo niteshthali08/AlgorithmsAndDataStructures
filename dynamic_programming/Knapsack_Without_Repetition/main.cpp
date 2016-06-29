@@ -6,6 +6,10 @@
 //  Copyright © 2016 Nitesh Thali. All rights reserved.
 /*
  Standard Knapsack Problem: Goal is to carry items which provides maximum weight as the output. Items can be only taken in full and without repetition.
+      Solution:
+        Maintain 2D matrix
+        Iterate through items onw by one. At each iteration, determine if we can include current item which maximizes the gain. If not then, dont include this item and copy the value from the above row.
+ 
  */
 
 #include <iostream>

@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+/*
+Problem: is to move robot from top left corner to bottom right corner. Count the number ways robot can reach its destination
+*/
+void moveRobot(int X, int Y, int* count)
+{
+	if ( x == 0 && y == 0)
+		{	*cout += 1;
+			return;
+		}
+	if (x <0 || y < 0)
+		{ return;}
+	moveRobot(X-1, Y, &count);
+	moveRobot(X, Y-1, &count);
+}
+
+int main(int argc, char const *argv[])
+{	
+	int count;
+	moveRobot(3,3, &count);
+	cout << "There are " <<count << " ways by which Robot can travel";
+
+	return 0;
+}
