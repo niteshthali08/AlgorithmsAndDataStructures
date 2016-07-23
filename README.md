@@ -11,7 +11,8 @@ Repository - for various Algorithms and Data Structures implemented in C++.
  7. Program to implement a hash table using the chaining scheme.
  8. Program to implement Rabin{Karp's algorithm for finding pattern in a given text.
 
-#Trees (Some of the questions are taken from http://www.geeksforgeeks.org/)
+#Trees 
+(Some of the questions are taken from http://www.geeksforgeeks.org/)
  1. Program to convert Tree into Doubly Linked List.
  2. Program to construct a mirror image of the given binary tree.
  3. Construct a Binary Tree from Postorder and Inorder.
@@ -59,6 +60,9 @@ Repository - for various Algorithms and Data Structures implemented in C++.
  45. Convert a given tree to its Sum Tree.**
  46. Populate Inorder Successor for all nodes.*
  47. Connect nodes at same level.
+ 48. Double Tree.
+ 49. Diameter of a tree. (Largest distance between any two leaves of the tree)
+ 50. Convert an arbitrary Binary Tree to a tree that holds Children Sum Property.
 
 
 #Mathematical Computation
