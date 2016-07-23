@@ -41,21 +41,19 @@ int main(int argc, const char * argv[]) {
       10   100
       / \   / \
       5 20 60 150
-     /     /
-     2    55
-         /
-        52
+         \  /
+          2 55
+
      */
     Node *root = getNode(50);
     root->left = getNode(10);
     root->right = getNode(100);
     root->left->left = getNode(5);
     root->left->right = getNode(20);
-    root->left->left->left = getNode(2);
+    root->left->left->right = getNode(2);
     root->right->left = getNode(60);
     root->right->right = getNode(150);
     root->right->left->left = getNode(55);
-    root->right->left->left->left = getNode(52);
     cout << "Inorder: "; inorder(root); cout << "\n";
     return 0;
 }

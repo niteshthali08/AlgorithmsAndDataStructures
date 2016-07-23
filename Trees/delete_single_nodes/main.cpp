@@ -5,7 +5,9 @@
 //  Created by Nitesh Thali on 6/1/16.
 //  Copyright © 2016 Nitesh Thali. All rights reserved.
 //  To delete the nodes having a single child from the tree.
-
+/*
+    Program to delete nodes containing a single child.
+ */
 
 #include <iostream>
 using namespace std;
@@ -37,7 +39,7 @@ Node* deleteSingleNodes(Node* root){
     
     if (root == NULL)
         return root;
-    /* Note: Tree will be changes hance left and right assignment*/
+    /* Note: Tree will be changes hence post-order and left and right assignments*/
     root->left = deleteSingleNodes(root->left);
     root->right = deleteSingleNodes(root->right);
     

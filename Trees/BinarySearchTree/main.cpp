@@ -40,8 +40,6 @@ void printDLL(Node *head)
 }
 void getDoublyLinkedList(Node *root, Node* & head, Node** prev)
 {
-    if(root == NULL)
-        return;
     
     /*  1. static Node* prev = NULL; this works but using static inside recursion is a bad idea. If this function is called on many trees then static variable will retain old value which is wrong. Therefore we can send double pointer as a third parameter to the function.
 
@@ -50,6 +48,8 @@ void getDoublyLinkedList(Node *root, Node* & head, Node** prev)
         3. Please see below for implementation using a reference variable.
      
      */
+    if(root == NULL)
+        return;
     getDoublyLinkedList(root->left, head, prev);
     if(*prev == NULL)
     {
@@ -62,13 +62,12 @@ void getDoublyLinkedList(Node *root, Node* & head, Node** prev)
     *prev= root;
     getDoublyLinkedList(root->right, head, prev);
 }
-/* Same implementation using a reference variable */
+/* 2. Same implementation using a reference variable */
 void getDoublyLinkedListRef(Node *root, Node* & head, Node* &prev)
 {
+    // Do it in in-order way.
     if(root == NULL)
         return;
-   
-    
     getDoublyLinkedListRef(root->left, head, prev);
     if(prev == NULL)
     {

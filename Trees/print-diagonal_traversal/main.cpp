@@ -4,8 +4,10 @@
 //
 //  Created by Nitesh Thali on 6/1/16.
 //  Copyright © 2016 Nitesh Thali. All rights reserved.
-//  Description: Starter code for creating a BST as drawn below. This code will be used by other program to qucikly generate a BST for testing their program.
-
+/*
+    Program to print elements according to diagonal. 
+ 
+*/
 
 #include <iostream>
 #include <map>

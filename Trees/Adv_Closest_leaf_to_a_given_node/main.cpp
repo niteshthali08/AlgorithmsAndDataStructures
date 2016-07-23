@@ -6,139 +6,155 @@
 //  Copyright © 2016 Nitesh Thali. All rights reserved.
 //
 
-/* Find closest leaf to the given node x in a tree */
-#include<iostream>
+/* Find closest leaf to the given node x in a tree  
+    ANOTHER Solution would be to keep all ancesstors in an array and call calculateDownDistance() on all of them when the target is found.
+ 
+ */
+
+
+#include <iostream>
 using namespace std;
 
-// A Tree node
-struct Node
-{
-    int key;
-    struct Node* left, *right;
+struct Node{
+    int data;
+    Node *left, *right;
 };
 
-// Utility function to create a new node
-Node* newNode(int key)
+Node* getNode(int data)
 {
-    Node* temp = new Node;
-    temp->key = key;
-    temp->left = temp->right = NULL;
-    return (temp);
+    Node *tmp = new Node();
+    tmp->data = data;
+    tmp->left = tmp->right = NULL;
+    return tmp;
 }
-
-// This function finds closest leaf to root.  This distance
-// is stored at *minDist.
-void findLeafDown(Node *root, int lev, int *minDist)
+void inorder(Node *root)
 {
-    // base case
-    if (root == NULL)
-        return ;
-    
-    // If this is a leaf node, then check if it is closer
-    // than the closest so far
-    if (root->left == NULL && root->right == NULL)
+    if(root)
     {
-        if (lev < (*minDist))
-            *minDist = lev;
-        return;
+        inorder(root->left);
+        cout << root->data << " ";
+        inorder(root->right);
     }
     
-    // Recur for left and right subtrees
-    findLeafDown(root->left, lev+1, minDist);
-    findLeafDown(root->right, lev+1, minDist);
 }
-
-// This function finds if there is closer leaf to x through
-// parent node.
-int findThroughParent(Node * root, Node *x, int *minDist)
-{
-    // Base cases
-    if (root == NULL) return -1;
-    if (root == x) return 0;
+int calculateDownDistance(Node* root){ // prints the nodes below the target
+    if(root == NULL)
+        return INT_MAX; // this is important, since this is not a leaf.
+    if(root->left == NULL && root->right == NULL){
+        return 0;
+    }
+    int left = calculateDownDistance(root->left);
+    int right = calculateDownDistance(root->right);
+    return 1 + min(left, right);
     
-    // Search x in left subtree of root
-    int l = findThroughParent(root->left, x,  minDist);
-    
-    // If left subtree has x
-    if (l != -1)
-    {
-        // Find closest leaf in right subtree
-        findLeafDown(root->right, l+2, minDist);
-        return l+1;
+}
+bool findMinDistance(Node* root, int target, int level, int &targetLevel, int &mindist){
+    if(root == NULL)
+        return false;
+    if(root->data == target){
+        targetLevel = level;
+        mindist = calculateDownDistance(root); // if root matches,calculate min down distance to leaf.
+        return true;
     }
     
-    // Search x in right subtree of root
-    int r = findThroughParent(root->right, x, minDist);
-    
-    // If right subtree has x
-    if (r != -1)
-    {
-        // Find closest leaf in left subtree
-        findLeafDown(root->left, r+2, minDist);
-        return r+1;
+    if (findMinDistance(root->left, target, level+1, targetLevel, mindist)){
+        
+        int dist = calculateDownDistance(root->right); // dont add a number to INT_MAX, it will become negative.
+        if (dist != INT_MAX) // that means leaf isn't present (single node)
+            dist += (targetLevel - level+1);
+        mindist = min (mindist,dist);
+        return true;
     }
-    
-    return -1;
+    if(findMinDistance(root->right,target, level+1, targetLevel, mindist)){
+       
+        int dist = calculateDownDistance(root->left); // dont add a number to INT_MAX, it will become negative.
+        if (dist != INT_MAX) // that means leaf isn't present (single node)
+            dist += (targetLevel - level+1);
+        mindist = min (mindist,dist);
+        return true;
+    }
+    // when backtracking reaches root, value of left and right gets swapped.
+    return false;
 }
-
-// Returns minimum distance of a leaf from given node x
-int minimumDistance(Node *root, Node *x)
-{
-    // Initialize result (minimum distance from a leaf)
-    int minDist = INT_MAX;
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    /*
+          50
+         /  \
+      10     100
+      /  \    /\
+      5   20 60 150
+           \
+           30
+             \
+              2
+               \
+                1
+                 \
+                  11
+                   \
+                    12
+     */
+    Node *root = getNode(50);
     
-    // Find closest leaf down to x
-    findLeafDown(x, 0, &minDist);
-    cout << "\nMin distance leaf down: " << minDist << endl;
+    root->left = getNode(10);
+    root->left->left = getNode(5);
+    root->left->right = getNode(20);
+    root->left->right->right = getNode(30);
+    root->left->right->right->right = getNode(2);
+    root->left->right->right->right->right = getNode(1);
+    root->left->right->right->right->right->right = getNode(11);
+    root->left->right->right->right->right->right->left = getNode(12);
     
-    // See if there is a closer leaf through parent
-    findThroughParent(root, x, &minDist);
+    root->right = getNode(100);
+    root->right->left = getNode(60);
+    root->right->right = getNode(150);
     
-    return minDist;
-}
-
-// Driver program
-int main ()
-{
-    // Let us create Binary Tree shown in above example
-    Node *root  = newNode(1);
-    root->left  = newNode(12);
-    root->right = newNode(13);
     
-    root->right->left   = newNode(14);
-    root->right->right  = newNode(15);
+    int level = 0, targetLevel = 0, target = 10, mind=0;
+    findMinDistance(root, target, level, targetLevel, mind);
+    cout << "Closest leaf to the given node is: " << mind << endl;
     
-    root->right->left->left   = newNode(21);
-    root->right->left->right  = newNode(22);
-    root->right->right->left  = newNode(23);
-    root->right->right->right = newNode(24);
+    /*********************TEST2*********************************/
+     /*
+         50
+         /  \
+       10     100
+          \    /\
+          20 60 150
+            \
+            30
+            \
+             2
+             \
+             1
+              \
+              11
+                \
+                12
+     */
+    root = getNode(50);
     
-    root->right->left->left->left  = newNode(1);
-    root->right->left->left->left->left  = newNode(10);
-    root->right->left->left->left->left->left  = newNode(100);
+    root->left = getNode(10);
+    root->left->right = getNode(20);
+    root->left->right->right = getNode(30);
+    root->left->right->right->right = getNode(2);
+    root->left->right->right->right->right = getNode(1);
+    root->left->right->right->right->right->right = getNode(11);
+    root->left->right->right->right->right->right->left = getNode(12);
     
-    root->right->left->left->right = newNode(2);
-    root->right->left->left->right->right = newNode(20);
-    root->right->left->left->right->right->right = newNode(200);
+    root->right = getNode(100);
+    root->right->left = getNode(60);
+    root->right->right = getNode(150);
     
-    root->right->left->right->left  = newNode(3);
-    root->right->left->right->left->left  = newNode(30);
-    root->right->left->right->left->left->left  = newNode(300);
     
-    root->right->left->right->right = newNode(4);
-    root->right->left->right->right->right = newNode(40);
-    root->right->left->right->right->right->right = newNode(400);
-    
-    root->right->right->left->left  = newNode(5);
-    root->right->right->left->right = newNode(6);
-    root->right->right->right->left = newNode(7);
-    root->right->right->right->right = newNode(8);
-    
-    Node *x = root->right->left;
-    
-    cout << "The closest leaf to the node with value "
-    << x->key << " is at a distance of "
-    << minimumDistance(root, x) << endl;
-    
+    level = 0, targetLevel = 0, target = 10, mind=0;
+    findMinDistance(root, target, level, targetLevel, mind);
+    cout << "Closest leaf to the given node is: " << mind << endl;
+    /*********************TEST3*********************************/
+    level = 0, targetLevel = 0, target = 50, mind=0;
+    findMinDistance(root, target, level, targetLevel, mind);
+    cout << "Closest leaf to the given node is: " << mind << endl;
     return 0;
 }
+

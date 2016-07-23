@@ -72,7 +72,7 @@ int main(int argc, const char * argv[])
 {
    // int in[] = {4, 8, 2, 5, 1, 6, 3, 7};
     // int post[] = {8, 4, 5, 2, 6, 7, 3, 1};
-    /* Wors case example*/
+    /* Worst case example*/
     int in[] = { 1,2,3,4,5};
     int post [] = {1,2,3,4,5};
     int n = sizeof(in)/sizeof(int);

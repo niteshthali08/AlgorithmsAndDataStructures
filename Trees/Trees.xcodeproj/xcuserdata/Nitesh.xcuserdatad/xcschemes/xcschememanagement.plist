@@ -19,6 +19,66 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Boundary_Traversal_of_binary_tree.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>47</integer>
+		</dict>
+		<key>Check_BT_is_Subtree_of_another_BT.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>36</integer>
+		</dict>
+		<key>Connect_nodes_at_same level.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>53</integer>
+		</dict>
+		<key>Construct_Tree_from_inorder_rootGreaterThanLR.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>49</integer>
+		</dict>
+		<key>Construct_Tree_from_preorder_and_NL_array.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>48</integer>
+		</dict>
+		<key>Convert_BTree_to_hold_Children_Sum_Property..xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>56</integer>
+		</dict>
+		<key>Convert_all_leaves_to_DLL_inplace.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>43</integer>
+		</dict>
+		<key>Convert_tree_to_its_Sum_Tree.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>51</integer>
+		</dict>
+		<key>Diameter_of_the_tree.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>55</integer>
+		</dict>
+		<key>Distance_between_two_given_nodes.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>40</integer>
+		</dict>
+		<key>Double_Tree.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>54</integer>
+		</dict>
+		<key>Height_Binary_TREE_given_parent_array.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>35</integer>
+		</dict>
 		<key>Iterative_Inorder_traversal.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -34,15 +94,80 @@
 			<key>orderHint</key>
 			<integer>17</integer>
 		</dict>
+		<key>Max_Path_SUM_IN_BT.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>28</integer>
+		</dict>
+		<key>Populate_Inorder_Successor_for_all_nodes.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>52</integer>
+		</dict>
+		<key>Print_nodes_that_dont_have_sibling.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>41</integer>
+		</dict>
+		<key>Remove_nodes_on_path_lengthLessThan_K.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>33</integer>
+		</dict>
+		<key>Remove_nodes_on_path_sumLessThanK.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>44</integer>
+		</dict>
+		<key>Serialize_Deserializ_Binary_Tree.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>34</integer>
+		</dict>
+		<key>Sum_of_all_root_to_leaf_paths.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>42</integer>
+		</dict>
+		<key>Tree_Isomorphosm_Problem.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>46</integer>
+		</dict>
 		<key>Trees.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>check_BT_mirror_of_itself.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>26</integer>
+		</dict>
 		<key>check_edgeRemoval_divides_into_2Equal_BT.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>11</integer>
+		</dict>
+		<key>check_if_all_leaves_at_same_level.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>45</integer>
+		</dict>
+		<key>check_if_tree_completeBT_or_not.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>30</integer>
+		</dict>
+		<key>check_if_tree_full.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>31</integer>
+		</dict>
+		<key>check_if_tree_is_balanced.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>39</integer>
 		</dict>
 		<key>check_mirror_trees.xcscheme</key>
 		<dict>
@@ -64,10 +189,35 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>construct_BT_from_parent_array_representation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>25</integer>
+		</dict>
+		<key>construct_infix_from_postfix.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>29</integer>
+		</dict>
 		<key>delete_single_nodes.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>19</integer>
+		</dict>
+		<key>find_maximum_sum_root_to_laef_path.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>50</integer>
+		</dict>
+		<key>find_min_depth_of_BT.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>27</integer>
+		</dict>
+		<key>largest_identical_left&amp;right_subtrees.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>23</integer>
 		</dict>
 		<key>lowest_common_ancesstor_BT.xcscheme</key>
 		<dict>
@@ -78,6 +228,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>15</integer>
+		</dict>
+		<key>max_path_sum_leaf_to_leaf.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>37</integer>
 		</dict>
 		<key>mirror_image_BST.xcscheme</key>
 		<dict>
@@ -94,10 +249,35 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>print_cousin_nodes.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
+		</dict>
+		<key>print_nodes_at_k_distance.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>38</integer>
+		</dict>
 		<key>print_root_2_Leaf_paths.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
+		</dict>
+		<key>print_sibling_nodes.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>single_valued_subtrees.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
+		</dict>
+		<key>sum_of_all_left_leaves.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>32</integer>
 		</dict>
 		<key>timepass.xcscheme</key>
 		<dict>
@@ -132,6 +312,51 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>6D0EA0B01D3D7FE100FD6641</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D0EA0BB1D3D8B0700FD6641</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D0EA0C61D3D8E2600FD6641</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D0EA0D11D3D978800FD6641</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D0EA0DC1D3DA45B00FD6641</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D0EA0E71D3DBEA200FD6641</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D0EA0F21D3DE49400FD6641</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D0EA0FD1D3DF18800FD6641</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D0EA1081D3E176C00FD6641</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6D1110D21D12A385005C4117</key>
 		<dict>
 			<key>primary</key>
@@ -158,6 +383,16 @@
 			<true/>
 		</dict>
 		<key>6D1284801D0514F60051F536</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D142B3F1D3C5B9100358B8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D142B4A1D3C5BB400358B8E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -213,6 +448,131 @@
 			<true/>
 		</dict>
 		<key>6D5041931D03CB3F0096DF92</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D62783E1D400A690081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D6278491D40237C0081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D6278541D402FDD0081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D62785F1D40411C0081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D62786A1D4067DA0081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D6278751D40A0120081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D6278801D418FA40081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D62788B1D41A7CE0081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D6278961D41AAD80081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D6278A11D41AFDA0081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D6278AC1D41DA250081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D6278B71D41E9DD0081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D6278C21D41FB600081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D6278CD1D420B9B0081C7F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D9010DA1D42AFB4009B156B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D9010E51D42B681009B156B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D9010F01D42CAA6009B156B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D9010FB1D42D612009B156B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D9011061D42E0F0009B156B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D9011111D42EA03009B156B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D90111C1D4301E5009B156B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D9011271D432CD3009B156B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D9011321D4338E2009B156B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6DE98F321D3CAB8D00D04B3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6DE98F3D1D3CBDD000D04B3A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

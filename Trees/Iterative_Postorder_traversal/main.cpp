@@ -38,7 +38,7 @@ void postorder_iterative(Node* root)
     stack <Node*> st;
     Node* last_poped = root; // Important, if this is initialized to NULL, then algo will fail to push last leftmost tree ele.
     /*
-     Important, here we have to take care that we are not putting same nodes again onto the stack. When we are printing root we check before pushing left and right if they were visite previously.
+     Important, here we have to take care to avoid putting same nodes again onto the stack. When we are printing root we check before pushing left and right if they were visited previously.
         Solution using two stacks
      1. Push root to first stack.
      2. Loop while first stack is not empty
